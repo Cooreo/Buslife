@@ -358,6 +358,7 @@
          style="animation-delay:${Math.min(index || 0, 12) * 22}ms" data-bus-id="${App.esc(bus.id)}">
         <div class="bus-card-media">
           ${App.busImageHTML(bus)}
+          <span class="logo-chip" title="${App.esc((D.CITIES[bus.city] || {}).carrier || bus.carrier || 'Przewoźnik')}">${Logo.getCarrierLogoSVG(bus.carrierId || bus.city, 26)}</span>
           <span class="photo-tag">${bus.photo ? 'fotografia' : 'schemat SVG'}</span>
         </div>
         <div class="bus-card-body">
