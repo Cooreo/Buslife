@@ -1,0 +1,12 @@
+{
+  "name": "buslife-kujawy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BusLife Kujawy — PWA do śledzenia i katalogowania autobusów MPK Włocławek i MZK Toruń",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "test": "node scripts/smoke.mjs"
+  },
+  "keywords": ["autobusy", "wloclawek", "torun", "mpk", "mzk", "pwa", "tabor"],
+  "license": "MIT"
+}
