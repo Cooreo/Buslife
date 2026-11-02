@@ -1,0 +1,8 @@
+node_modules/
+.shots/
+.smoke.mjs
+.check.mjs
+.dbg.mjs
+.shot.mjs
+package-lock.json
+.DS_Store

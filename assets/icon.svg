@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="100%" stop-color="#1c2541"/>
+    </linearGradient>
+    <linearGradient id="bus" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect x="36" y="36" width="440" height="440" rx="88" fill="none" stroke="#fbbf24" stroke-width="6" stroke-opacity="0.28"/>
+  <!-- LED display header -->
+  <rect x="96" y="102" width="320" height="54" rx="14" fill="#090d16" stroke="#334155" stroke-width="4"/>
+  <text x="256" y="138" font-family="monospace" font-weight="900" font-size="30" fill="#fbbf24" text-anchor="middle" letter-spacing="3">BUSLIFE PL</text>
+  <!-- Bus body -->
+  <rect x="84" y="168" width="344" height="196" rx="34" fill="url(#bus)"/>
+  <!-- Windshield -->
+  <rect x="104" y="186" width="304" height="96" rx="18" fill="#0f172a"/>
+  <!-- Wipers -->
+  <line x1="170" y1="278" x2="215" y2="225" stroke="#64748b" stroke-width="6" stroke-linecap="round"/>
+  <line x1="342" y1="278" x2="297" y2="225" stroke="#64748b" stroke-width="6" stroke-linecap="round"/>
+  <!-- MPK/MZK stripe -->
+  <path d="M104 316 L260 316 L285 296 L408 296 L408 326 L104 326 Z" fill="#ef4444"/>
+  <path d="M275 326 L300 296 L335 296 L310 326 Z" fill="#10b981"/>
+  <path d="M310 326 L335 296 L370 296 L345 326 Z" fill="#3b82f6"/>
+  <!-- Headlights -->
+  <circle cx="128" cy="342" r="12" fill="#ffffff"/>
+  <circle cx="384" cy="342" r="12" fill="#ffffff"/>
+  <rect x="206" y="334" width="100" height="20" rx="5" fill="#1e293b"/>
+  <text x="256" y="349" font-family="monospace" font-weight="700" font-size="14" fill="#38bdf8" text-anchor="middle">#007 CW</text>
+  <!-- Wheels -->
+  <rect x="116" y="356" width="54" height="44" rx="14" fill="#0f172a"/>
+  <rect x="342" y="356" width="54" height="44" rx="14" fill="#0f172a"/>
+  <!-- City badges -->
+  <text x="256" y="442" font-family="sans-serif" font-weight="800" font-size="24" fill="#e2e8f0" text-anchor="middle" letter-spacing="2">WŁOCŁAWEK • TORUŃ</text>
+</svg>
