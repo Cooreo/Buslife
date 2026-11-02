@@ -1,4 +1,4 @@
-const CACHE_NAME = 'buslife-kujawy-v1';
+const CACHE_NAME = 'buslife-kujawy-v2';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -6,6 +6,8 @@ const ASSETS_TO_CACHE = [
   './css/styles.css',
   './js/data.js',
   './js/logos.js',
+  './js/core.js',
+  './js/pages.js',
   './js/app.js',
   './assets/icon.svg',
   './assets/icon-192.png',
