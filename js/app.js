@@ -96,7 +96,7 @@
             return `<a class="city-card" href="#/tabor?city=${c.id}">
               <div class="city-card-media">
                 <img src="${App.esc(c.heroPhoto)}" alt="Autobusy ${App.esc(c.name)}" loading="lazy" decoding="async">
-                <span class="city-card-badge">${App.esc(c.carrier)}</span>
+                <span class="city-card-badge">${App.Logo.getCarrierLogoSVG(c.carrierId, 20)} ${App.esc(c.carrier)}</span>
               </div>
               <div class="city-card-body">
                 <div class="city-card-title">
@@ -465,6 +465,8 @@
               </div>
             </div>
             <div class="row gap-6 wrap mt-10">
+              <span class="logo-inline" title="${App.esc(city.carrier)}">${App.Logo.getCarrierLogoSVG(bus.carrierId || bus.city, 30)}</span>
+              <span class="logo-inline" title="${App.esc(bus.brand)}">${App.Logo.getBrandLogoSVG(bus.brand, 30)}</span>
               <span class="badge ${info.cls}">${App.esc(info.label)}</span>
               <span class="badge ${status.cls}">${App.esc(status.label)}</span>
               ${prob >= 50 ? '<span class="badge live">● prawdopodobnie w ruchu</span>' : `<span class="badge">${prob}% szansy na kurs</span>`}

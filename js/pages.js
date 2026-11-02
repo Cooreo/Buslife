@@ -137,7 +137,10 @@
           <div class="row gap-10 wrap">
             <div class="line-bullet ${typeCls}" style="width:60px;height:60px;border-radius:16px;font-size:1.28rem">${App.esc(line.n)}</div>
             <div style="flex:1;min-width:180px">
-              <div class="eyebrow">${line.night ? 'Linia nocna' : line.type === 'podmiejska' ? 'Linia podmiejska' : 'Linia miejska'} · ${App.esc(meta.carrier)}</div>
+              <div class="row gap-6 wrap" style="align-items:center">
+                <span class="logo-inline">${App.Logo.getCarrierLogoSVG(meta.carrierId, 24)}</span>
+                <span class="eyebrow">${line.night ? 'Linia nocna' : line.type === 'podmiejska' ? 'Linia podmiejska' : 'Linia miejska'} · ${App.esc(meta.carrier)}</span>
+              </div>
               <h1 style="font-size:1.42rem;margin-top:5px">${App.esc(line.from)} <span style="color:var(--muted)">→</span> ${App.esc(line.to)}</h1>
               <p class="small muted" style="margin-top:5px">${App.esc(line.via || '')}</p>
             </div>
@@ -911,6 +914,15 @@
               ${D.SOURCES.map((s) => `<li><a href="${App.esc(s.url)}" target="_blank" rel="noopener">${App.esc(s.label)}</a></li>`).join('')}
             </ul>
             <p class="tiny muted" style="margin-top:8px">Stan wiedzy: listopad 2026. Numery taborowe w seriach mogą się różnić od stanu faktycznego — baza ma charakter społecznościowy i jest stale uzupełniana.</p>
+          </div>
+
+          <div class="info-card">
+            <h4>${App.icon('bus', 16)} Przewoźnicy i producenci</h4>
+            <p class="small">Logotypy w aplikacji są uproszczonymi wektorami identyfikującymi przewoźnika i producenta pojazdu.</p>
+            <div class="logo-grid">
+              ${Object.values(D.CITIES).map((c) => `<div class="logo-tile">${App.Logo.getCarrierLogoSVG(c.carrierId, 46)}<span>${App.esc(c.carrier)}</span></div>`).join('')}
+              ${['Solaris', 'MAN', 'Ursus', 'Jelcz'].map((b) => `<div class="logo-tile">${App.Logo.getBrandLogoSVG(b, 46)}<span>${App.esc(b)}</span></div>`).join('')}
+            </div>
           </div>
 
           <div class="info-card">
